@@ -22,20 +22,32 @@ public class Game {
 	public void run()
 	{
 		// Create our initial batch of creatures
-		List<Creature> creatures = new ArrayList<Creature>();
+		List<Creature> creatures = new ArrayList<>();
 		
 		// Add some plants to the world
 		for(int i = 0; i < 25; i++) {
 			Plant p = new Plant();
 			creatures.add(p);
 		}
-		
+
 		// Add some animals to the world
 		for(int i = 0; i < 25; i++) {
 			Animal a = new Animal();
 			creatures.add(a);
 		}
-		
+
+		// Add some zombie to the world
+		for(int i = 0; i < 10; i++) {
+			Zombie zombie = new Zombie();
+			creatures.add(zombie);
+		}
+
+		// Add some wolf to the world
+		for(int i = 0; i < 10; i++) {
+			Wolf wolf = new Wolf();
+			creatures.add(wolf);
+		}
+
 		// Create the world
 		_theWorld = new World(creatures);
 	}

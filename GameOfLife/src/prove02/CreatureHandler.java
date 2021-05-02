@@ -106,7 +106,6 @@ public class CreatureHandler
 		
 		Movable m = (Movable)c;
 		m.move();
-		
 		wrapPoint(c.getLocation());
 	}
 
@@ -134,6 +133,12 @@ public class CreatureHandler
 					Aware a = (Aware)c;
 					a.senseNeighbors(above, below, left, right);
 				}
+
+//				if(c instanceof Spawner){
+//					if (){
+//
+//					}
+//				}
 
 				if(c instanceof Movable) {
 					handleMove(c);
