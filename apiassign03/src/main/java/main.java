@@ -44,7 +44,7 @@ public class main {
             System.out.println("Date/Hour\t" + infoA.getItems().get(i).getDt_txt());
             System.out.println("Temperature\t" + infoA.getItems().get(i).getAddInfo().get("temp"));
             System.out.println("Description\t" + infoA.getItems().get(i).getWeather().get(0).get("description"));
-            System.out.println("Temperature\t" + infoA.getItems().get(i).getWind().get("speed"));
+            System.out.println("Speed Wind\t" + infoA.getItems().get(i).getWind().get("speed"));
             System.out.println("--------------------------------------------------------");
         }
 
